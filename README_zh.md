@@ -12,6 +12,8 @@
 
 2. 安装 [Poetry](https://python-poetry.org/docs/) 作为依赖管理工具，可参考下面的命令
 
+3. 获取 OceanBase 4.3.3 及以上版本的数据库连接信息，可参考开源的 [OceanBase 数据库](https://open.oceanbase.com/quickStart)部署方案或者 [OceanBase Cloud](https://www.oceanbase.com/free-trial) 方案。
+
 ```bash
 python3 -m pip install poetry
 ```
@@ -25,18 +27,27 @@ python3 -m pip install poetry
 poetry install
 ```
 
-### 2. 启动图像搜索 UI
+### 2. 配置环境变量
+
+我们提供了 `.env.example` 文件，您需要将其复制为 `.env` 文件并填入您的数据库连接信息。可参考下面的命令，
+
+```bash
+cp .env.example .env
+vi .env
+```
+
+### 3. 启动图像搜索 UI
 
 ```bash
 # 启动图像搜索应用界面
 poetry run streamlit run --server.runOnSave false image_search_ui.py
 ```
 
-### 3. 处理并存储图像数据
+### 4. 处理并存储图像数据
 
 打开应用界面之后，您可以在左侧侧边栏中看到“图片加载目录”的输入框，在其中填写您准备的图片目录的绝对路径，然后点击“加载图片”按钮。应用程序将处理并存储这些图像数据，您将在界面上看到图片处理进度。
 
-### 4. 使用图像搜索
+### 5. 使用图像搜索
 
 在图片处理完成后，您将在界面中上方看到图片上传操作栏，您可上传一张图片用于搜索相似图片。上传图片后，应用程序将搜索并返回数据库中最相似的一些图片，默认返回最相似的前 10 张图片。
 
