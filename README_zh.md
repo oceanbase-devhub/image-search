@@ -12,11 +12,11 @@
 
 2. 安装 [Poetry](https://python-poetry.org/docs/) 作为依赖管理工具，可参考下面的命令
 
-3. 获取 OceanBase 4.3.3 及以上版本的数据库连接信息，可参考开源的 [OceanBase 数据库](https://open.oceanbase.com/quickStart)部署方案或者 [OceanBase Cloud](https://www.oceanbase.com/free-trial) 方案。
-
 ```bash
 python3 -m pip install poetry
 ```
+
+3. 获取 OceanBase 4.3.3 及以上版本的数据库连接信息，可参考 OceanBase [开源版部署方案](https://open.oceanbase.com/quickStart)或者 [OceanBase Cloud](https://www.oceanbase.com/free-trial) 方案。
 
 ## 应用搭建步骤
 
