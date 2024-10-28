@@ -48,10 +48,26 @@ class OBImageStore:
     def load_image_dir(self, dir_path: str, batch_size: int = 32) -> Iterator:
         if not self.client.check_table_exists(self.table_name):
             self.client.create_table(self.table_name, columns=cols)
-            self.client.perform_raw_text_sql(
-                "ALTER SYSTEM SET ob_vector_memory_limit_percentage = 30"
+            vals = []
+            params = self.client.perform_raw_text_sql(
+                "SHOW PARAMETERS LIKE '%ob_vector_memory_limit_percentage%'"
             )
-            self.client.perform_raw_text_sql("SET GLOBAL ob_query_timeout=100000000")
+            for row in params:
+                val = int(row[6])
+                vals.append(val)
+            if len(vals) == 0:
+                print("ob_vector_memory_limit_percentage not found in parameters.")
+                exit(1)
+            if any(val == 0 for val in vals):
+                try:
+                    self.client.perform_raw_text_sql(
+                        "ALTER SYSTEM SET ob_vector_memory_limit_percentage = 30"
+                    )
+                except Exception as e:
+                    raise Exception(
+                        "Failed to set ob_vector_memory_limit_percentage to 30.", e
+                )
+            self.client.perform_raw_text_sql("SET ob_query_timeout=100000000")
             self.client.create_index(
                 self.table_name,
                 is_vec_index=True,
