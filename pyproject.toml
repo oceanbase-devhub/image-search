@@ -13,6 +13,7 @@ python-dotenv = "^1.0.1"
 opencv-python = "^4.10.0.84"
 torchvision = "^0.20.0"
 transformers = "^4.45.2"
+pyobvector = "^0.1.6"
 
 
 [build-system]
