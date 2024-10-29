@@ -41,7 +41,7 @@ with st.sidebar:
         help=t("image_base_help"),
         placeholder=t("image_base_placeholder"),
     )
-    click_load = st.button("加载图片")
+    click_load = st.button(t("load_images"))
 
 
 store = OBImageStore(
@@ -70,7 +70,7 @@ elif click_load:
             bar.progress(
                 finished / total, text=t("images_loading_progress", finished, total)
             )
-        st.toast(t("images_uploaded"), icon="🎉")
+        st.toast(t("images_loaded"), icon="🎉")
         st.balloons()
         time.sleep(2)
 
