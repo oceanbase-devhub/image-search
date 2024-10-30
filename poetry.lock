@@ -23,11 +23,6 @@ all = ["altair-tiles (>=0.3.0)", "anywidget (>=0.9.0)", "numpy", "pandas (>=0.25
 dev = ["geopandas", "hatch", "ibis-framework[polars]", "ipython[kernel]", "mistune", "mypy", "pandas (>=0.25.3)", "pandas-stubs", "polars (>=0.20.3)", "pytest", "pytest-cov", "pytest-xdist[psutil] (>=3.5,<4.0)", "ruff (>=0.6.0)", "types-jsonschema", "types-setuptools"]
 doc = ["docutils", "jinja2", "myst-parser", "numpydoc", "pillow (>=9,<10)", "pydata-sphinx-theme (>=0.14.1)", "scipy", "sphinx", "sphinx-copybutton", "sphinx-design", "sphinxext-altair"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "annotated-types"
 version = "0.7.0"
@@ -38,11 +33,6 @@ files = [
     {file = "annotated_types-0.7.0-py3-none-any.whl", hash = "sha256:1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"},
     {file = "annotated_types-0.7.0.tar.gz", hash = "sha256:aff07c09a53a08bc8cfccb9c85b05f1aa9a2a6f23728d790723543408344ce89"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "attrs"
@@ -63,11 +53,6 @@ docs = ["cogapp", "furo", "myst-parser", "sphinx", "sphinx-notfound-page", "sphi
 tests = ["cloudpickle", "hypothesis", "mypy (>=1.11.1)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-xdist[psutil]"]
 tests-mypy = ["mypy (>=1.11.1)", "pytest-mypy-plugins"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "backports-tarfile"
 version = "1.2.0"
@@ -83,11 +68,6 @@ files = [
 docs = ["furo", "jaraco.packaging (>=9.3)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
 testing = ["jaraco.test", "pytest (!=8.0.*)", "pytest (>=6,!=8.1.*)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "blinker"
 version = "1.8.2"
@@ -98,11 +78,6 @@ files = [
     {file = "blinker-1.8.2-py3-none-any.whl", hash = "sha256:1779309f71bf239144b9399d06ae925637cf6634cf6bd131104184531bf67c01"},
     {file = "blinker-1.8.2.tar.gz", hash = "sha256:8f77b09d3bf7c795e969e9486f39c2c5e9c39d4ee07424be2bc594ece9642d83"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "cachetools"
@@ -115,11 +90,6 @@ files = [
     {file = "cachetools-5.5.0.tar.gz", hash = "sha256:2cc24fb4cbe39633fb7badd9db9ca6295d766d9c2995f245725a46715d050f2a"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "certifi"
 version = "2024.8.30"
@@ -130,11 +100,6 @@ files = [
     {file = "certifi-2024.8.30-py3-none-any.whl", hash = "sha256:922820b53db7a7257ffbda3f597266d435245903d80737e34f8a45ff3e3230d8"},
     {file = "certifi-2024.8.30.tar.gz", hash = "sha256:bec941d2aa8195e248a60b31ff9f0558284cf01a52591ceda73ea9afffd69fd9"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "cffi"
@@ -214,11 +179,6 @@ files = [
 
 [package.dependencies]
 pycparser = "*"
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "charset-normalizer"
@@ -334,11 +294,6 @@ files = [
     {file = "charset_normalizer-3.4.0.tar.gz", hash = "sha256:223217c3d4f82c3ac5e29032b3f1c2eb0fb591b72161f86d93f5719079dae93e"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "click"
 version = "8.1.7"
@@ -353,11 +308,6 @@ files = [
 [package.dependencies]
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "colorama"
 version = "0.4.6"
@@ -368,11 +318,6 @@ files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "cryptography"
@@ -423,11 +368,6 @@ ssh = ["bcrypt (>=3.1.5)"]
 test = ["certifi", "cryptography-vectors (==43.0.3)", "pretend", "pytest (>=6.2.0)", "pytest-benchmark", "pytest-cov", "pytest-xdist"]
 test-randomorder = ["pytest-randomly"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "docutils"
 version = "0.21.2"
@@ -438,11 +378,6 @@ files = [
     {file = "docutils-0.21.2-py3-none-any.whl", hash = "sha256:dafca5b9e384f0e419294eb4d2ff9fa826435bf15f15b7bd45723e8ad76811b2"},
     {file = "docutils-0.21.2.tar.gz", hash = "sha256:3a6b18732edf182daa3cd12775bbb338cf5691468f91eeeb109deff6ebfa986f"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "filelock"
@@ -459,11 +394,6 @@ files = [
 docs = ["furo (>=2024.8.6)", "sphinx (>=8.0.2)", "sphinx-autodoc-typehints (>=2.4.1)"]
 testing = ["covdefaults (>=2.3)", "coverage (>=7.6.1)", "diff-cover (>=9.2)", "pytest (>=8.3.3)", "pytest-asyncio (>=0.24)", "pytest-cov (>=5)", "pytest-mock (>=3.14)", "pytest-timeout (>=2.3.1)", "virtualenv (>=20.26.4)"]
 typing = ["typing-extensions (>=4.12.2)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "fsspec"
@@ -504,11 +434,6 @@ test-downstream = ["aiobotocore (>=2.5.4,<3.0.0)", "dask-expr", "dask[dataframe,
 test-full = ["adlfs", "aiohttp (!=4.0.0a0,!=4.0.0a1)", "cloudpickle", "dask", "distributed", "dropbox", "dropboxdrivefs", "fastparquet", "fusepy", "gcsfs", "jinja2", "kerchunk", "libarchive-c", "lz4", "notebook", "numpy", "ocifs", "pandas", "panel", "paramiko", "pyarrow", "pyarrow (>=1)", "pyftpdlib", "pygit2", "pytest", "pytest-asyncio (!=0.22.0)", "pytest-benchmark", "pytest-cov", "pytest-mock", "pytest-recording", "pytest-rerunfailures", "python-snappy", "requests", "smbprotocol", "tqdm", "urllib3", "zarr", "zstandard"]
 tqdm = ["tqdm"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "gitdb"
 version = "4.0.11"
@@ -522,11 +447,6 @@ files = [
 
 [package.dependencies]
 smmap = ">=3.0.1,<6"
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "gitpython"
@@ -545,11 +465,6 @@ gitdb = ">=4.0.1,<5"
 [package.extras]
 doc = ["sphinx (==4.3.2)", "sphinx-autodoc-typehints", "sphinx-rtd-theme", "sphinxcontrib-applehelp (>=1.0.2,<=1.0.4)", "sphinxcontrib-devhelp (==1.0.2)", "sphinxcontrib-htmlhelp (>=2.0.0,<=2.0.1)", "sphinxcontrib-qthelp (==1.0.3)", "sphinxcontrib-serializinghtml (==1.1.5)"]
 test = ["coverage[toml]", "ddt (>=1.1.1,!=1.4.3)", "mock", "mypy", "pre-commit", "pytest (>=7.3.1)", "pytest-cov", "pytest-instafail", "pytest-mock", "pytest-sugar", "typing-extensions"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "greenlet"
@@ -637,11 +552,6 @@ files = [
 docs = ["Sphinx", "furo"]
 test = ["objgraph", "psutil"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "huggingface-hub"
 version = "0.26.1"
@@ -676,11 +586,6 @@ testing = ["InquirerPy (==0.3.4)", "Jinja2", "Pillow", "aiohttp", "fastapi", "gr
 torch = ["safetensors[torch]", "torch"]
 typing = ["types-PyYAML", "types-requests", "types-simplejson", "types-toml", "types-tqdm", "types-urllib3", "typing-extensions (>=4.8.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "idna"
 version = "3.10"
@@ -694,11 +599,6 @@ files = [
 
 [package.extras]
 all = ["flake8 (>=7.1.1)", "mypy (>=1.11.2)", "pytest (>=8.3.2)", "ruff (>=0.6.2)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "importlib-metadata"
@@ -723,11 +623,6 @@ perf = ["ipython"]
 test = ["flufl.flake8", "importlib-resources (>=1.3)", "jaraco.test (>=5.4)", "packaging", "pyfakefs", "pytest (>=6,!=8.1.*)", "pytest-perf (>=0.9.2)"]
 type = ["pytest-mypy"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "jaraco-classes"
 version = "3.4.0"
@@ -746,11 +641,6 @@ more-itertools = "*"
 docs = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
 testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy", "pytest-ruff (>=0.2.1)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "jaraco-context"
 version = "6.0.1"
@@ -768,11 +658,6 @@ files = [
 [package.extras]
 doc = ["furo", "jaraco.packaging (>=9.3)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
 test = ["portend", "pytest (>=6,!=8.1.*)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=2.2)", "pytest-mypy", "pytest-ruff (>=0.2.1)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "jaraco-functools"
@@ -796,11 +681,6 @@ enabler = ["pytest-enabler (>=2.2)"]
 test = ["jaraco.classes", "pytest (>=6,!=8.1.*)"]
 type = ["pytest-mypy"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "jeepney"
 version = "0.8.0"
@@ -815,11 +695,6 @@ files = [
 [package.extras]
 test = ["async-timeout", "pytest", "pytest-asyncio (>=0.17)", "pytest-trio", "testpath", "trio"]
 trio = ["async_generator", "trio"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "jinja2"
@@ -837,11 +712,6 @@ MarkupSafe = ">=2.0"
 
 [package.extras]
 i18n = ["Babel (>=2.7)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "jsonschema"
@@ -864,11 +734,6 @@ rpds-py = ">=0.7.1"
 format = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3987", "uri-template", "webcolors (>=1.11)"]
 format-nongpl = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3986-validator (>0.1.0)", "uri-template", "webcolors (>=24.6.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "jsonschema-specifications"
 version = "2024.10.1"
@@ -882,11 +747,6 @@ files = [
 
 [package.dependencies]
 referencing = ">=0.31.0"
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "keyring"
@@ -917,11 +777,6 @@ enabler = ["pytest-enabler (>=2.2)"]
 test = ["pyfakefs", "pytest (>=6,!=8.1.*)"]
 type = ["pygobject-stubs", "pytest-mypy", "shtab", "types-pywin32"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "markdown-it-py"
 version = "3.0.0"
@@ -945,11 +800,6 @@ plugins = ["mdit-py-plugins"]
 profiling = ["gprof2dot"]
 rtd = ["jupyter_sphinx", "mdit-py-plugins", "myst-parser", "pyyaml", "sphinx", "sphinx-copybutton", "sphinx-design", "sphinx_book_theme"]
 testing = ["coverage", "pytest", "pytest-cov", "pytest-regressions"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "markupsafe"
@@ -1021,11 +871,6 @@ files = [
     {file = "markupsafe-3.0.2.tar.gz", hash = "sha256:ee55d3edf80167e48ea11a923c7386f4669df67d7994554387f84e7d8b0a2bf0"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "mdurl"
 version = "0.1.2"
@@ -1037,11 +882,6 @@ files = [
     {file = "mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "more-itertools"
 version = "10.5.0"
@@ -1052,11 +892,6 @@ files = [
     {file = "more-itertools-10.5.0.tar.gz", hash = "sha256:5482bfef7849c25dc3c6dd53a6173ae4795da2a41a80faea6700d9f5846c5da6"},
     {file = "more_itertools-10.5.0-py3-none-any.whl", hash = "sha256:037b0d3203ce90cca8ab1defbbdac29d5f993fc20131f3664dc8d6acfa872aef"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "mpmath"
@@ -1074,11 +909,6 @@ develop = ["codecov", "pycodestyle", "pytest (>=4.6)", "pytest-cov", "wheel"]
 docs = ["sphinx"]
 gmpy = ["gmpy2 (>=2.1.0a4)"]
 tests = ["pytest (>=4.6)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "narwhals"
@@ -1099,11 +929,6 @@ pandas = ["pandas (>=0.25.3)"]
 polars = ["polars (>=0.20.3)"]
 pyarrow = ["pyarrow (>=11.0.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "networkx"
 version = "3.2.1"
@@ -1121,11 +946,6 @@ developer = ["changelist (==0.4)", "mypy (>=1.1)", "pre-commit (>=3.2)", "rtoml"
 doc = ["nb2plots (>=0.7)", "nbconvert (<7.9)", "numpydoc (>=1.6)", "pillow (>=9.4)", "pydata-sphinx-theme (>=0.14)", "sphinx (>=7)", "sphinx-gallery (>=0.14)", "texext (>=0.6.7)"]
 extra = ["lxml (>=4.6)", "pydot (>=1.4.2)", "pygraphviz (>=1.11)", "sympy (>=1.10)"]
 test = ["pytest (>=7.2)", "pytest-cov (>=4.0)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "nh3"
@@ -1151,11 +971,6 @@ files = [
     {file = "nh3-0.2.18-cp37-abi3-win_amd64.whl", hash = "sha256:8ce0f819d2f1933953fca255db2471ad58184a60508f03e6285e5114b6254844"},
     {file = "nh3-0.2.18.tar.gz", hash = "sha256:94a166927e53972a9698af9542ace4e38b9de50c34352b962f4d9a7d4c927af4"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "numpy"
@@ -1202,11 +1017,6 @@ files = [
     {file = "numpy-1.26.4.tar.gz", hash = "sha256:2a02aba9ed12e4ac4eb3ea9421c420301a0c6460d9830d74a9df87efa4912010"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "nvidia-cublas-cu12"
 version = "12.4.5.8"
@@ -1218,11 +1028,6 @@ files = [
     {file = "nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl", hash = "sha256:2fc8da60df463fdefa81e323eef2e36489e1c94335b5358bcb38360adf75ac9b"},
     {file = "nvidia_cublas_cu12-12.4.5.8-py3-none-win_amd64.whl", hash = "sha256:5a796786da89203a0657eda402bcdcec6180254a8ac22d72213abc42069522dc"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "nvidia-cuda-cupti-cu12"
@@ -1236,11 +1041,6 @@ files = [
     {file = "nvidia_cuda_cupti_cu12-12.4.127-py3-none-win_amd64.whl", hash = "sha256:5688d203301ab051449a2b1cb6690fbe90d2b372f411521c86018b950f3d7922"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "nvidia-cuda-nvrtc-cu12"
 version = "12.4.127"
@@ -1253,11 +1053,6 @@ files = [
     {file = "nvidia_cuda_nvrtc_cu12-12.4.127-py3-none-win_amd64.whl", hash = "sha256:a961b2f1d5f17b14867c619ceb99ef6fcec12e46612711bcec78eb05068a60ec"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "nvidia-cuda-runtime-cu12"
 version = "12.4.127"
@@ -1269,11 +1064,6 @@ files = [
     {file = "nvidia_cuda_runtime_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl", hash = "sha256:64403288fa2136ee8e467cdc9c9427e0434110899d07c779f25b5c068934faa5"},
     {file = "nvidia_cuda_runtime_cu12-12.4.127-py3-none-win_amd64.whl", hash = "sha256:09c2e35f48359752dfa822c09918211844a3d93c100a715d79b59591130c5e1e"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "nvidia-cudnn-cu12"
@@ -1288,11 +1078,6 @@ files = [
 
 [package.dependencies]
 nvidia-cublas-cu12 = "*"
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "nvidia-cufft-cu12"
@@ -1309,11 +1094,6 @@ files = [
 [package.dependencies]
 nvidia-nvjitlink-cu12 = "*"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "nvidia-curand-cu12"
 version = "10.3.5.147"
@@ -1325,11 +1105,6 @@ files = [
     {file = "nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl", hash = "sha256:a88f583d4e0bb643c49743469964103aa59f7f708d862c3ddb0fc07f851e3b8b"},
     {file = "nvidia_curand_cu12-10.3.5.147-py3-none-win_amd64.whl", hash = "sha256:f307cc191f96efe9e8f05a87096abc20d08845a841889ef78cb06924437f6771"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "nvidia-cusolver-cu12"
@@ -1348,11 +1123,6 @@ nvidia-cublas-cu12 = "*"
 nvidia-cusparse-cu12 = "*"
 nvidia-nvjitlink-cu12 = "*"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "nvidia-cusparse-cu12"
 version = "12.3.1.170"
@@ -1368,11 +1138,6 @@ files = [
 [package.dependencies]
 nvidia-nvjitlink-cu12 = "*"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "nvidia-nccl-cu12"
 version = "2.21.5"
@@ -1382,11 +1147,6 @@ python-versions = ">=3"
 files = [
     {file = "nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl", hash = "sha256:8579076d30a8c24988834445f8d633c697d42397e92ffc3f63fa26766d25e0a0"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "nvidia-nvjitlink-cu12"
@@ -1400,11 +1160,6 @@ files = [
     {file = "nvidia_nvjitlink_cu12-12.4.127-py3-none-win_amd64.whl", hash = "sha256:fd9020c501d27d135f983c6d3e244b197a7ccad769e34df53a42e276b0e25fa1"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "nvidia-nvtx-cu12"
 version = "12.4.127"
@@ -1416,11 +1171,6 @@ files = [
     {file = "nvidia_nvtx_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl", hash = "sha256:781e950d9b9f60d8241ccea575b32f5105a5baf4c2351cab5256a24869f12a1a"},
     {file = "nvidia_nvtx_cu12-12.4.127-py3-none-win_amd64.whl", hash = "sha256:641dccaaa1139f3ffb0d3164b4b84f9d253397e38246a4f2f36728b48566d485"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "opencv-python"
@@ -1448,11 +1198,6 @@ numpy = [
     {version = ">=1.19.3", markers = "platform_system == \"Linux\" and platform_machine == \"aarch64\" and python_version >= \"3.8\" and python_version < \"3.10\" or python_version > \"3.9\" and python_version < \"3.10\" or python_version >= \"3.9\" and platform_system != \"Darwin\" and python_version < \"3.10\" or python_version >= \"3.9\" and platform_machine != \"arm64\" and python_version < \"3.10\""},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "packaging"
 version = "24.1"
@@ -1463,11 +1208,6 @@ files = [
     {file = "packaging-24.1-py3-none-any.whl", hash = "sha256:5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124"},
     {file = "packaging-24.1.tar.gz", hash = "sha256:026ed72c8ed3fcce5bf8950572258698927fd1dbda10a5e981cdf0ac37f4f002"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "pandas"
@@ -1554,11 +1294,6 @@ spss = ["pyreadstat (>=1.2.0)"]
 sql-other = ["SQLAlchemy (>=2.0.0)", "adbc-driver-postgresql (>=0.8.0)", "adbc-driver-sqlite (>=0.8.0)"]
 test = ["hypothesis (>=6.46.1)", "pytest (>=7.3.2)", "pytest-xdist (>=2.2.0)"]
 xml = ["lxml (>=4.9.2)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "pillow"
@@ -1657,11 +1392,6 @@ tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "pa
 typing = ["typing-extensions"]
 xmp = ["defusedxml"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "pkginfo"
 version = "1.10.0"
@@ -1675,11 +1405,6 @@ files = [
 
 [package.extras]
 testing = ["pytest", "pytest-cov", "wheel"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "protobuf"
@@ -1700,11 +1425,6 @@ files = [
     {file = "protobuf-5.28.3-py3-none-any.whl", hash = "sha256:cee1757663fa32a1ee673434fcf3bf24dd54763c79690201208bafec62f19eed"},
     {file = "protobuf-5.28.3.tar.gz", hash = "sha256:64badbc49180a5e401f373f9ce7ab1d18b63f7dd4a9cdc43c92b9f0b481cef7b"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "pyarrow"
@@ -1757,11 +1477,6 @@ numpy = ">=1.16.6"
 [package.extras]
 test = ["cffi", "hypothesis", "pandas", "pytest", "pytz"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "pycparser"
 version = "2.22"
@@ -1772,11 +1487,6 @@ files = [
     {file = "pycparser-2.22-py3-none-any.whl", hash = "sha256:c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"},
     {file = "pycparser-2.22.tar.gz", hash = "sha256:491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "pydantic"
@@ -1800,11 +1510,6 @@ typing-extensions = [
 [package.extras]
 email = ["email-validator (>=2.0.0)"]
 timezone = ["tzdata"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "pydantic-core"
@@ -1907,11 +1612,6 @@ files = [
 [package.dependencies]
 typing-extensions = ">=4.6.0,<4.7.0 || >4.7.0"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "pydeck"
 version = "0.9.1"
@@ -1931,11 +1631,6 @@ numpy = ">=1.16.4"
 carto = ["pydeck-carto"]
 jupyter = ["ipykernel (>=5.1.2)", "ipython (>=5.8.0)", "ipywidgets (>=7,<8)", "traitlets (>=4.3.2)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "pygments"
 version = "2.18.0"
@@ -1949,11 +1644,6 @@ files = [
 
 [package.extras]
 windows-terminal = ["colorama (>=0.4.6)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "pymysql"
@@ -1970,17 +1660,12 @@ files = [
 ed25519 = ["PyNaCl (>=1.4.0)"]
 rsa = ["cryptography"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "pyobvector"
 version = "0.1.6"
 description = "A python SDK for OceanBase Vector Store, based on SQLAlchemy, compatible with Milvus API."
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = "<4.0,>=3.9"
 files = [
     {file = "pyobvector-0.1.6-py3-none-any.whl", hash = "sha256:0d700e865a85b4716b9a03384189e49288cd9d5f3cef88aed4740bc82d5fd136"},
     {file = "pyobvector-0.1.6.tar.gz", hash = "sha256:05551addcac8c596992d5e38b480c83ca3481c6cfc6f56a1a1bddfb2e6ae037e"},
@@ -1990,11 +1675,6 @@ files = [
 numpy = ">=1.26.0,<2.0.0"
 pymysql = ">=1.1.1,<2.0.0"
 sqlalchemy = ">=2.0.32,<3.0.0"
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "python-dateutil"
@@ -2010,11 +1690,6 @@ files = [
 [package.dependencies]
 six = ">=1.5"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "python-dotenv"
 version = "1.0.1"
@@ -2029,11 +1704,6 @@ files = [
 [package.extras]
 cli = ["click (>=5.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "pytz"
 version = "2024.2"
@@ -2045,11 +1715,6 @@ files = [
     {file = "pytz-2024.2.tar.gz", hash = "sha256:2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "pywin32-ctypes"
 version = "0.2.3"
@@ -2060,11 +1725,6 @@ files = [
     {file = "pywin32-ctypes-0.2.3.tar.gz", hash = "sha256:d162dc04946d704503b2edc4d55f3dba5c1d539ead017afa00142c38b9885755"},
     {file = "pywin32_ctypes-0.2.3-py3-none-any.whl", hash = "sha256:8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "pyyaml"
@@ -2128,11 +1788,6 @@ files = [
     {file = "pyyaml-6.0.2.tar.gz", hash = "sha256:d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "readme-renderer"
 version = "44.0"
@@ -2152,11 +1807,6 @@ Pygments = ">=2.5.1"
 [package.extras]
 md = ["cmarkgfm (>=0.8.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "referencing"
 version = "0.35.1"
@@ -2171,11 +1821,6 @@ files = [
 [package.dependencies]
 attrs = ">=22.2.0"
 rpds-py = ">=0.7.0"
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "regex"
@@ -2280,11 +1925,6 @@ files = [
     {file = "regex-2024.9.11.tar.gz", hash = "sha256:6c188c307e8433bcb63dc1915022deb553b4203a70722fc542c363bf120a01fd"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "requests"
 version = "2.32.3"
@@ -2306,11 +1946,6 @@ urllib3 = ">=1.21.1,<3"
 socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "requests-toolbelt"
 version = "1.0.0"
@@ -2325,11 +1960,6 @@ files = [
 [package.dependencies]
 requests = ">=2.0.1,<3.0.0"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "rfc3986"
 version = "2.0.0"
@@ -2343,11 +1973,6 @@ files = [
 
 [package.extras]
 idna2008 = ["idna"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "rich"
@@ -2367,11 +1992,6 @@ typing-extensions = {version = ">=4.0.0,<5.0", markers = "python_version < \"3.1
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<9)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "rpds-py"
@@ -2484,11 +2104,6 @@ files = [
     {file = "rpds_py-0.20.0-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:fdfc3a892927458d98f3d55428ae46b921d1f7543b89382fdb483f5640daaec8"},
     {file = "rpds_py-0.20.0.tar.gz", hash = "sha256:d72a210824facfdaf8768cf2d7ca25a042c30320b3020de2fa04640920d4e121"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "safetensors"
@@ -2622,11 +2237,6 @@ tensorflow = ["safetensors[numpy]", "tensorflow (>=2.11.0)"]
 testing = ["h5py (>=3.7.0)", "huggingface-hub (>=0.12.1)", "hypothesis (>=6.70.2)", "pytest (>=7.2.0)", "pytest-benchmark (>=4.0.0)", "safetensors[numpy]", "setuptools-rust (>=1.5.2)"]
 torch = ["safetensors[numpy]", "torch (>=1.10)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "secretstorage"
 version = "3.3.3"
@@ -2641,11 +2251,6 @@ files = [
 [package.dependencies]
 cryptography = ">=2.0"
 jeepney = ">=0.6"
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "setuptools"
@@ -2667,11 +2272,6 @@ enabler = ["pytest-enabler (>=2.2)"]
 test = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "ini2toml[lite] (>=0.14)", "jaraco.develop (>=7.21)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "jaraco.test", "packaging (>=23.2)", "pip (>=19.1)", "pyproject-hooks (!=1.1)", "pytest (>=6,!=8.1.*)", "pytest-home (>=0.5)", "pytest-perf", "pytest-subprocess", "pytest-timeout", "pytest-xdist (>=3)", "tomli-w (>=1.0.0)", "virtualenv (>=13.0.0)", "wheel (>=0.44.0)"]
 type = ["importlib-metadata (>=7.0.2)", "jaraco.develop (>=7.21)", "mypy (==1.11.*)", "pytest-mypy"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "six"
 version = "1.16.0"
@@ -2683,11 +2283,6 @@ files = [
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "smmap"
 version = "5.0.1"
@@ -2698,11 +2293,6 @@ files = [
     {file = "smmap-5.0.1-py3-none-any.whl", hash = "sha256:e6d8668fa5f93e706934a62d7b4db19c8d9eb8cf2adbb75ef1b675aa332b69da"},
     {file = "smmap-5.0.1.tar.gz", hash = "sha256:dceeb6c0028fdb6734471eb07c0cd2aae706ccaecab45965ee83f11c8d3b1f62"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "sqlalchemy"
@@ -2777,7 +2367,7 @@ typing-extensions = ">=4.6.0"
 [package.extras]
 aiomysql = ["aiomysql (>=0.2.0)", "greenlet (!=0.4.17)"]
 aioodbc = ["aioodbc", "greenlet (!=0.4.17)"]
-aiosqlite = ["aiosqlite", "greenlet (!=0.4.17)", "typing-extensions (!=3.10.0.1)"]
+aiosqlite = ["aiosqlite", "greenlet (!=0.4.17)", "typing_extensions (!=3.10.0.1)"]
 asyncio = ["greenlet (!=0.4.17)"]
 asyncmy = ["asyncmy (>=0.2.3,!=0.2.4,!=0.2.6)", "greenlet (!=0.4.17)"]
 mariadb-connector = ["mariadb (>=1.0.1,!=1.1.2,!=1.1.5,!=1.1.10)"]
@@ -2787,7 +2377,7 @@ mssql-pyodbc = ["pyodbc"]
 mypy = ["mypy (>=0.910)"]
 mysql = ["mysqlclient (>=1.4.0)"]
 mysql-connector = ["mysql-connector-python"]
-oracle = ["cx-oracle (>=8)"]
+oracle = ["cx_oracle (>=8)"]
 oracle-oracledb = ["oracledb (>=1.0.1)"]
 postgresql = ["psycopg2 (>=2.7)"]
 postgresql-asyncpg = ["asyncpg", "greenlet (!=0.4.17)"]
@@ -2797,19 +2387,14 @@ postgresql-psycopg2binary = ["psycopg2-binary"]
 postgresql-psycopg2cffi = ["psycopg2cffi"]
 postgresql-psycopgbinary = ["psycopg[binary] (>=3.0.7)"]
 pymysql = ["pymysql"]
-sqlcipher = ["sqlcipher3-binary"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
+sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
 name = "streamlit"
 version = "1.39.0"
 description = "A faster way to build and share data apps"
 optional = false
-python-versions = ">=3.8, !=3.9.7"
+python-versions = "!=3.9.7,>=3.8"
 files = [
     {file = "streamlit-1.39.0-py2.py3-none-any.whl", hash = "sha256:a359fc54ed568b35b055ff1d453c320735539ad12e264365a36458aef55a5fba"},
     {file = "streamlit-1.39.0.tar.gz", hash = "sha256:fef9de7983c4ee65c08e85607d7ffccb56b00482b1041fa62f90e4815d39df3a"},
@@ -2839,11 +2424,6 @@ watchdog = {version = ">=2.1.5,<6", markers = "platform_system != \"Darwin\""}
 [package.extras]
 snowflake = ["snowflake-connector-python (>=2.8.0)", "snowflake-snowpark-python[modin] (>=1.17.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "sympy"
 version = "1.13.1"
@@ -2861,11 +2441,6 @@ mpmath = ">=1.1.0,<1.4"
 [package.extras]
 dev = ["hypothesis (>=6.70.0)", "pytest (>=7.1.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "tabulate"
 version = "0.9.0"
@@ -2879,11 +2454,6 @@ files = [
 
 [package.extras]
 widechars = ["wcwidth"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "tenacity"
@@ -2899,11 +2469,6 @@ files = [
 [package.extras]
 doc = ["reno", "sphinx"]
 test = ["pytest", "tornado (>=4.5)", "typeguard"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "tokenizers"
@@ -3022,11 +2587,6 @@ dev = ["tokenizers[testing]"]
 docs = ["setuptools-rust", "sphinx", "sphinx-rtd-theme"]
 testing = ["black (==22.3)", "datasets", "numpy", "pytest", "requests", "ruff"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "toml"
 version = "0.10.2"
@@ -3037,11 +2597,6 @@ files = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
     {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "torch"
@@ -3095,11 +2650,6 @@ typing-extensions = ">=4.8.0"
 opt-einsum = ["opt-einsum (>=3.3)"]
 optree = ["optree (>=0.12.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "torchvision"
 version = "0.20.0"
@@ -3138,17 +2688,12 @@ torch = "2.5.0"
 gdown = ["gdown (>=4.7.3)"]
 scipy = ["scipy"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "tornado"
 version = "6.4.1"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
 optional = false
-python-versions = ">= 3.8"
+python-versions = ">=3.8"
 files = [
     {file = "tornado-6.4.1-cp38-abi3-macosx_10_9_universal2.whl", hash = "sha256:163b0aafc8e23d8cdc3c9dfb24c5368af84a81e3364745ccb4427669bf84aec8"},
     {file = "tornado-6.4.1-cp38-abi3-macosx_10_9_x86_64.whl", hash = "sha256:6d5ce3437e18a2b66fbadb183c1d3364fb03f2be71299e7d10dbeeb69f4b2a14"},
@@ -3162,11 +2707,6 @@ files = [
     {file = "tornado-6.4.1-cp38-abi3-win_amd64.whl", hash = "sha256:b24b8982ed444378d7f21d563f4180a2de31ced9d8d84443907a0a64da2072e7"},
     {file = "tornado-6.4.1.tar.gz", hash = "sha256:92d3ab53183d8c50f8204a51e6f91d18a15d5ef261e84d452800d4ff6fc504e9"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "towhee"
@@ -3187,11 +2727,6 @@ tenacity = "*"
 tqdm = ">=4.59.0"
 twine = "*"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "tqdm"
 version = "4.66.5"
@@ -3211,11 +2746,6 @@ dev = ["pytest (>=6)", "pytest-cov", "pytest-timeout", "pytest-xdist"]
 notebook = ["ipywidgets (>=6)"]
 slack = ["slack-sdk"]
 telegram = ["requests"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "transformers"
@@ -3286,11 +2816,6 @@ torchhub = ["filelock", "huggingface-hub (>=0.23.2,<1.0)", "importlib-metadata",
 video = ["av (==9.2.0)", "decord (==0.6.0)"]
 vision = ["Pillow (>=10.0.1,<=15.0)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "triton"
 version = "3.1.0"
@@ -3312,11 +2837,6 @@ filelock = "*"
 build = ["cmake (>=3.20)", "lit"]
 tests = ["autopep8", "flake8", "isort", "llnl-hatchet", "numpy", "pytest", "scipy (>=1.7.1)"]
 tutorials = ["matplotlib", "pandas", "tabulate"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "twine"
@@ -3340,11 +2860,6 @@ rfc3986 = ">=1.4.0"
 rich = ">=12.0.0"
 urllib3 = ">=1.26.0"
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "typing-extensions"
 version = "4.12.2"
@@ -3356,11 +2871,6 @@ files = [
     {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
 ]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "tzdata"
 version = "2024.2"
@@ -3371,11 +2881,6 @@ files = [
     {file = "tzdata-2024.2-py2.py3-none-any.whl", hash = "sha256:a48093786cdcde33cad18c2555e8532f34422074448fbc874186f0abd79565cd"},
     {file = "tzdata-2024.2.tar.gz", hash = "sha256:7d85cc416e9382e69095b7bdf4afd9e3880418a2413feec7069d533d6b4e31cc"},
 ]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "urllib3"
@@ -3393,11 +2898,6 @@ brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
 h2 = ["h2 (>=4,<5)"]
 socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
-
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
 
 [[package]]
 name = "watchdog"
@@ -3441,11 +2941,6 @@ files = [
 [package.extras]
 watchmedo = ["PyYAML (>=3.10)"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [[package]]
 name = "zipp"
 version = "3.20.2"
@@ -3465,12 +2960,7 @@ enabler = ["pytest-enabler (>=2.2)"]
 test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", "jaraco.test", "more-itertools", "pytest (>=6,!=8.1.*)", "pytest-ignore-flaky"]
 type = ["pytest-mypy"]
 
-[package.source]
-type = "legacy"
-url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
-reference = "tuna"
-
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.9.7 || >3.9.7,<4.0"
-content-hash = "8eab57ac1e595bd11bd2070c0dc0819e32a0eb367ea05a1da49c2b9d2214b4e1"
+content-hash = "419d37911df463c71e4b9318f52be4d83caa453981706cdc7e0fcd4ecbe7d7e1"
