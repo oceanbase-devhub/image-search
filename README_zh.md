@@ -18,7 +18,7 @@
 python3 -m pip install poetry
 ```
 
-4. 获取 OceanBase 4.3.3 及以上版本的数据库连接信息，可参考 OceanBase [开源版部署方案](https://open.oceanbase.com/quickStart)或者 [OceanBase Cloud](https://www.oceanbase.com/free-trial) 方案。如果不打算在本地部署 OceanBase，可以参考该方案。
+4. 获取 OceanBase 4.3.3 及以上版本的数据库连接信息，如果不打算在本地部署 OceanBase，可参考 OceanBase [开源版部署方案](https://open.oceanbase.com/quickStart)或者 [OceanBase Cloud](https://www.oceanbase.com/free-trial) 方案。
 
 ## 应用搭建步骤
 
