@@ -11,7 +11,6 @@ from connection import connection_args
 from i18n import t
 from utils import extract_bundle
 
-table_name = os.getenv("IMG_TABLE_NAME", "image_search")
 tmp_path = "tmp/temp.jpg"
 
 if "archives" not in st.session_state:
@@ -33,7 +32,7 @@ with st.sidebar:
     st.subheader(t("search_setting"))
     table_name = st.text_input(
         t("table_name_input"),
-        table_name,
+        os.getenv("IMG_TABLE_NAME", "image_search"),
         help=t("table_name_help"),
     )
     top_k = st.slider(t("recall_number"), 1, 30, 10, help=t("recall_number_help"))
@@ -50,7 +49,7 @@ with st.sidebar:
             f.write(archive.read())
             st.session_state.archives[archive.name] = True
             st.rerun()
-            
+
     archives = os.listdir(os.path.join("tmp", "archives"))
     selected_archive = st.selectbox(
         t("image_archive"),
@@ -61,11 +60,9 @@ with st.sidebar:
     )
     click_load = st.button(t("load_images"))
 
-
 store = OBImageStore(
     uri=f"{connection_args['host']}:{connection_args['port']}",
     **connection_args,
-    table_name=table_name,
 )
 
 table_exist = store.client.check_table_exists(table_name)
@@ -82,14 +79,14 @@ elif click_load:
         total = store.load_amount(target)
         finished = 0
         bar = st.progress(0, text=t("images_loading"))
-        for _ in store.load_image_dir(target):
+        for _ in store.load_image_dir(target, table_name=table_name):
             finished += 1
             bar.progress(
-                finished / total, text=t("images_loading_progress", finished, total)
+                finished / total,
+                text=t("images_loading_progress", finished, total),
             )
         st.toast(t("images_loaded"), icon="🎉")
         st.balloons()
-        shutil.rmtree(target)
         time.sleep(2)
         st.rerun()
 elif table_exist:
@@ -108,7 +105,7 @@ elif table_exist:
             f.write(uploaded_image.read())
 
         col2.subheader(t("similar_images_header"))
-        results = store.search(tmp_path, limit=top_k)
+        results = store.search(tmp_path, limit=top_k, table_name=table_name)
         with col2:
             if len(results) == 0:
                 st.warning(t("no_similar_images"))

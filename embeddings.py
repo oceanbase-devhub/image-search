@@ -1,8 +1,10 @@
 import os
+import re
 from typing import Iterator
 from towhee import AutoPipes
 from pydantic import BaseModel
 
+pattern = re.compile(r"[^ -~]")
 
 class ImageData(BaseModel):
     file_name: str = ""
@@ -25,6 +27,8 @@ def load_amount(dir_path: str) -> int:
     for root, _, files in os.walk(dir_path):
         if "MACOSX" in root:
             continue
+        if pattern.match(root):
+            continue
         for f in files:
             if f.startswith("."):
                 continue
@@ -37,6 +41,8 @@ def load_amount(dir_path: str) -> int:
 def load_imgs(dir_path: str) -> Iterator[ImageData]:
     for root, _, files in os.walk(dir_path):
         if "MACOSX" in root:
+            continue
+        if pattern.match(root):
             continue
         for f in files:
             if f.startswith("."):

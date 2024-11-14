@@ -34,23 +34,26 @@ class OBImageStore:
         uri: str = "",
         db_name: str = "",
         password: str = "",
-        table_name: str = "image_store",
         **kwargs,
     ):
-        self.table_name = table_name
         self.client = ObVecClient(
             user=user,
             uri=uri,
             db_name=db_name,
             password=password,
         )
-        
+
     def load_amount(self, dir_path: str) -> int:
         return load_amount(dir_path)
 
-    def load_image_dir(self, dir_path: str, batch_size: int = 32) -> Iterator:
-        if not self.client.check_table_exists(self.table_name):
-            self.client.create_table(self.table_name, columns=cols)
+    def load_image_dir(
+        self,
+        dir_path: str,
+        batch_size: int = 32,
+        table_name: str = "image_search",
+    ) -> Iterator:
+        if not self.client.check_table_exists(table_name):
+            self.client.create_table(table_name, columns=cols)
             vals = []
             params = self.client.perform_raw_text_sql(
                 "SHOW PARAMETERS LIKE '%ob_vector_memory_limit_percentage%'"
@@ -69,9 +72,9 @@ class OBImageStore:
                 except Exception as e:
                     raise Exception(
                         "Failed to set ob_vector_memory_limit_percentage to 30.", e
-                )
+                    )
             self.client.create_index(
-                self.table_name,
+                table_name,
                 is_vec_index=True,
                 index_name="img_embedding_idx",
                 column_names=["embedding"],
@@ -85,16 +88,21 @@ class OBImageStore:
             batch.append(img.model_dump())
             yield
             if len(batch) == batch_size:
-                self.client.insert(self.table_name, batch)
+                self.client.insert(table_name, batch)
                 batch = []
         if len(batch) > 0:
-            self.client.insert(self.table_name, batch)
+            self.client.insert(table_name, batch)
 
-    def search(self, image_path: str, limit: int = 10) -> list[dict[str, any]]:
+    def search(
+        self,
+        image_path: str,
+        limit: int = 10,
+        table_name: str = "image_search",
+    ) -> list[dict[str, any]]:
         target_embedding = embed_img(image_path)
 
         res = self.client.ann_search(
-            self.table_name,
+            table_name,
             vec_data=target_embedding,
             vec_column_name="embedding",
             topk=limit,
