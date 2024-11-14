@@ -20,8 +20,24 @@ def embed_img(path) -> list[float]:
 supported_img_types = [".jpg", ".jpeg", ".png"]
 
 
+def load_amount(dir_path: str) -> int:
+    total = 0
+    for root, _, files in os.walk(dir_path):
+        if "MACOSX" in root:
+            continue
+        for f in files:
+            if f.startswith("."):
+                continue
+            if not any([f.casefold().endswith(ext) for ext in supported_img_types]):
+                continue
+            total += 1
+    return total
+
+
 def load_imgs(dir_path: str) -> Iterator[ImageData]:
     for root, _, files in os.walk(dir_path):
+        if "MACOSX" in root:
+            continue
         for f in files:
             if f.startswith("."):
                 continue
