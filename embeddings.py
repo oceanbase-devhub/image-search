@@ -17,10 +17,15 @@ def embed_img(path) -> list[float]:
     return img_pipe(path).get()[0]
 
 
+supported_img_types = [".jpg", ".jpeg", ".png"]
+
+
 def load_imgs(dir_path: str) -> Iterator[ImageData]:
     for root, _, files in os.walk(dir_path):
         for f in files:
             if f.startswith("."):
+                continue
+            if not any([f.casefold().endswith(ext) for ext in supported_img_types]):
                 continue
             file_path = os.path.abspath(os.path.join(root, f))
             embedding = embed_img(file_path)
