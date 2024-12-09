@@ -33,6 +33,9 @@ tr = {
         "distance": "📏 Distance:",
         "file_path": "📂 File path:",
         "table_not_exist": "The table {} does not exist, load images first please",
+        "upload_image_archive": "Upload Image Archive",
+        "image_archive": "Image Archive",
+        "image_archive_help": "Select an image archive file and click Load Images to extract and load images",
     },
     "zh": {
         "title": "🔍 图像搜索应用",
@@ -66,6 +69,9 @@ tr = {
         "distance": "📏 距离:",
         "file_path": "📂 文件路径:",
         "table_not_exist": "图片表 {} 不存在，请先加载图片",
+        "upload_image_archive": "上传图片压缩包",
+        "image_archive": "图片压缩包",
+        "image_archive_help": "选中一个已上传的图片压缩包，点击加载图片来批量加载图片",
     },
 }
 
@@ -74,7 +80,8 @@ if lang not in ["en", "zh"]:
     print("Invalid language, using default (zh)")
     lang = "zh"
 
+
 def t(key: str, *args) -> str:
     if len(args) > 0:
-        return tr[lang].get(key, "").format(*args)
-    return tr[lang].get(key, "")
+        return tr[lang].get(key, "TODO: " + key).format(*args)
+    return tr[lang].get(key, "TODO: " + key)

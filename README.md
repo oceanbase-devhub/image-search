@@ -1,5 +1,7 @@
 # Image Search Application
 
+[中文版](./README_zh.md)
+
 ## Introduction
 
 With the vector storage and retrieval capabilities of OceanBase, we can build an image search application. The application will embed images into vectors and store them in the database. Users can upload images, and the application will search and return the most similar images in the database.
